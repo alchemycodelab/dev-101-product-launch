@@ -77,6 +77,8 @@ Draw a sketch - by hand or electronically. Check out [Miro](miro.com). Plan wher
 
 Create your html, choosing the best element for the job. There won't be layout or styling, so it will look like a really bad wikipedia/craigslist clone, but worse. You may need to visit some of the HTML structure for layout reasons, but the goal is to get the right elements in `index.html`.
 
+### Layout and Styling with CSS
+
 To apply your css:
 - Add your colors to the `:root` section as css variables
 - Default styling and high-level layout goes on the body:
@@ -97,8 +99,6 @@ To apply your css:
         /* css properties */
     }
     ```
-
-### Layout and Styling with CSS
 
 #### Mobile First
 
