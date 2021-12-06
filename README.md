@@ -87,9 +87,9 @@ To apply your css:
         /* css properties */
     }
     ```
-- Give an id attribute, `id="header"` to each major element you want to address:
+- Give an id attribute, for example `id="signup-form"`, to each major element you want to address:
     ```
-    #header {
+    #signup-form {
         /* css properties */
     }
     ```
