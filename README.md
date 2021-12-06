@@ -61,23 +61,63 @@ To "push" to GitHub, either hit "Sync" after committing, or hit the recycle whee
 
 ## Steps
 
-1. Come up with a concept and find assets:
-    - Image(s)
-    - Content (okay to be silly or flippant)
-    - Fonts
-    - Sketch out general design
-    - Decide on whether it will be responsive
-1. Create your html
-1. Add CSS to create your layout
-    - Start with "narrow" mobile-first design
-    - Consider separately:
-        - layout
-        - styling
-    - Add additional layout css for wider viewports (laptop)
-1. Make sure to add the following attributes to your form and its controls:
-    - Use `method="GET"` and `action="thank-you.html"` to direct to the thank you 
-    page when the form is submitted
-    - Make sure to add an id to your input, and add `for="email"` (or whatever your id is) _to the label_. This makes the label associated with the input
+### Planning and Assets
+
+Come up with a concept and find assets:
+
+- Image(s)
+- Content (okay to be silly or flippant)
+- Fonts
+- Sketch out general design
+- Decide on how (or whether) it will be responsive
+
+Draw a sketch - by hand or electronically. Check out [Miro](miro.com). Plan where each major component will go. Create this for each "responsive design", meaning the device width ("viewport"), think mobile vs laptop.
+
+### Semantic HTML
+
+Create your html, choosing the best element for the job. There won't be layout or styling, so it will look like a really bad wikipedia/craigslist clone, but worse. You may need to visit some of the HTML structure for layout reasons, but the goal is to get the right elements in `index.html`.
+
+To apply your css:
+- Add your colors to the `:root` section as css variables
+- Default styling and high-level layout goes on the body:
+    ```
+    body {
+        /* css properties */
+    }
+    ```
+- Give an id attribute, `id="header"` to each major element you want to address:
+    ```
+    #header {
+        /* css properties */
+    }
+    ```
+- Or, if it is a common tag type, directly style it:
+    ```
+    input {
+        /* css properties */
+    }
+    ```
+
+### Layout and Styling with CSS
+
+#### Mobile First
+
+Start with narrow (mobile) as this tends to be the simplest (static layout, all vertical, with scrolling). Focus on:
+
+- styling choices (font and color)
+- padding and margins
+- heights and widths (of form controls)
+
+#### Responsive
+
+Add a media query for switching to more complex layout for wide viewports (laptop). Use the examples and CSS Tricks resource to grid your design.
+
+### Form
+
+Make sure to add the following attributes to your form and its controls:
+- Use `method="GET"` and `action="thank-you.html"` to direct to the thank you 
+page when the form is submitted
+- Make sure to add an id to your input, and add `for="email"` (or whatever your id is) _to the label_. This makes the label associated with the input
 
 ## Deploying
 
