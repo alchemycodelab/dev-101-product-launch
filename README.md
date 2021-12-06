@@ -1,25 +1,84 @@
-## The Golden Rule: 
+Product Launch Page
+===
 
-🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
+Build and deploy and single page "Product Launch Page"!
 
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
+## Resources
 
-## Making a plan
+Keep it Simple, looking for Teaser more than complete product page:
+- [Mailchimp page builder](https://mailchimp.com/features/landing-pages)
 
-1) **Make a drawing of your app. Simple "wireframes"**
-1) **Once you have a drawing, name the HTML elements you'll need to realize your vision**
-1) **For each HTML element ask: Why do I need this?** 
-1) **Once we know _why_ we need each element, think about how to implement the "Why" as a "How"**
-1) **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change?**
-1) **Think about how to validate each of your features according to a Definition of Done**
-1) **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
+### Images
 
-Additional considerations:
-- Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
-- Consider your data model. 
-  - What kinds of objects (i.e., Dogs, Friends, Todos, etc) will you need? 
-  - What are the key/value pairs? 
-  - What arrays might you need? 
-  - What needs to live in a persistence layer?
-- Is there some state we need to initialize?
-- Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+- [Unsplash](https://unsplash.com/)
+- [Pexels](https://www.pexels.com/)
+- [Pixabay](https://pixabay.com/)
+- [Burst](https://burst.shopify.com/)
+
+### Typography (Fonts)
+
+- [Google Fonts](https://fonts.google.com/)
+- [Font Squirrel](https://www.fontsquirrel.com/)
+
+### Color Pallets
+
+From image:
+- [Canva generate from image](https://www.canva.com/colors/color-palette-generator/)
+- [Generate from image](https://imagecolorpicker.com/)
+- [Coolors](https://coolors.co/image-picker)
+
+Designer/Color Palettes
+- [Colour lovers](https://www.colourlovers.com/)
+- [Adobe Color wheel](https://color.adobe.com/create/color-wheel)
+- [Canva Color Wheel](https://www.canva.com/colors/color-wheel/)
+
+### CSS Grid
+
+- [CSS Tricks Complete Guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+## Project
+
+Take a look at the demo pages for how-to's, ideas, inspiration. Feel free to copy,
+but use _as you build_. Do not copy and change values!
+
+Build your page in the following files:
+
+File | Purpose
+---|---
+`index.html` | Main page with html and semantic elements
+`global.css` | css for your page
+`thank-you.html` | Page your form will "submit" to
+
+## Commit
+
+As you are working and complete small steps, stop and make a commit using the 
+build-in VSCode sidebar tool:
+
+- "Stage" the files you want to commit
+- Enter a commit message and hit `CMD + ENTER` or `CTRL + ENTER` (mac or windows)
+
+To "push" to GitHub, either hit "Sync" after committing, or hit the recycle wheel button in the lower left corner.
+
+## Steps
+
+1. Come up with a concept and find assets:
+    - Image(s)
+    - Content (okay to be silly or flippant)
+    - Fonts
+    - Sketch out general design
+    - Decide on whether it will be responsive
+1. Create your html
+1. Add CSS to create your layout
+    - Start with "narrow" mobile-first design
+    - Consider separately:
+        - layout
+        - styling
+    - Add additional layout css for wider viewports (laptop)
+1. Make sure to add the following attributes to your form and its controls:
+    - Use `method="GET"` and `action="thank-you.html"` to direct to the thank you 
+    page when the form is submitted
+    - Make sure to add an id to your input, and add `for="email"` (or whatever your id is) _to the label_. This makes the label associated with the input
+
+## Deploying
+
+Follow the instructions in the Resources on Canvas to deploy using GitHub pages
