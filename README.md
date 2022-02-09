@@ -125,4 +125,4 @@ Add a media query for switching to more complex layout for wide viewports (lapto
 
 ## Deploying
 
-Follow the instructions in the Resources on Canvas to deploy using GitHub pages
+We will deploy our app using [Github pages](https://github.com/alchemycodelab/config-build-deploy/tree/main/git-pages).
