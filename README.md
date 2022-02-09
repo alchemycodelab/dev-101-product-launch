@@ -1,11 +1,11 @@
-Product Launch Page
-===
+# Product Launch Page
 
 Build and deploy and single page "Product Launch Page"!
 
 ## Resources
 
 Keep it Simple, looking for Teaser more than complete product page:
+
 - [Mailchimp page builder](https://mailchimp.com/features/landing-pages)
 
 ### Images
@@ -23,14 +23,20 @@ Keep it Simple, looking for Teaser more than complete product page:
 ### Color Pallets
 
 From image:
+
 - [Canva generate from image](https://www.canva.com/colors/color-palette-generator/)
 - [Generate from image](https://imagecolorpicker.com/)
 - [Coolors](https://coolors.co/image-picker)
 
 Designer/Color Palettes
+
 - [Colour lovers](https://www.colourlovers.com/)
 - [Adobe Color wheel](https://color.adobe.com/create/color-wheel)
 - [Canva Color Wheel](https://www.canva.com/colors/color-wheel/)
+
+### CSS Grid
+
+- [CSS Tricks Complete Guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 ### CSS Flexbox
 
@@ -43,14 +49,14 @@ but use _as you build_. Do not copy and change values!
 
 Build your page in the following files:
 
-File | Purpose
----|---
-`index.html` | Main page with html and semantic elements
-`global.css` | css for your page
+| File         | Purpose                                   |
+| ------------ | ----------------------------------------- |
+| `index.html` | Main page with html and semantic elements |
+| `global.css` | css for your page                         |
 
 ## Commit
 
-As you are working and complete small steps, stop and make a commit using the 
+As you are working and complete small steps, stop and make a commit using the
 build-in VSCode sidebar tool:
 
 - "Stage" the files you want to commit
@@ -79,25 +85,26 @@ Create your html, choosing the best element for the job. There won't be layout o
 ### Layout and Styling with CSS
 
 To apply your css:
+
 - Add your colors to the `:root` section as css variables
 - Default styling and high-level layout goes on the body:
-    ```
-    body {
-        /* css properties */
-    }
-    ```
+  ```
+  body {
+      /* css properties */
+  }
+  ```
 - Give an id attribute, for example `id="signup-form"`, to each major element you want to address:
-    ```
-    #signup-form {
-        /* css properties */
-    }
-    ```
+  ```
+  #signup-form {
+      /* css properties */
+  }
+  ```
 - Or, if it is a common tag type, directly style it:
-    ```
-    input {
-        /* css properties */
-    }
-    ```
+  ```
+  input {
+      /* css properties */
+  }
+  ```
 
 #### Mobile First
 
@@ -113,7 +120,7 @@ Add a media query for switching to more complex layout for wide viewports (lapto
 
 ### Form
 
-- The form isn't going to do anything but reload the page initially - we'll add aditional functionality in later in the week. Be sure to include an input for the user email and a button. 
+- The form isn't going to do anything but reload the page initially - we'll add aditional functionality in later in the week. Be sure to include an input for the user email and a button.
 - Make sure to add an id to your input, and add `for="email"` (or whatever your id is) _to the label_. This makes the label associated with the input
 
 ## Deploying
