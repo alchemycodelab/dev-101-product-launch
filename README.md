@@ -32,9 +32,9 @@ Designer/Color Palettes
 - [Adobe Color wheel](https://color.adobe.com/create/color-wheel)
 - [Canva Color Wheel](https://www.canva.com/colors/color-wheel/)
 
-### CSS Grid
+### CSS Flexbox
 
-- [CSS Tricks Complete Guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [CSS Tricks Complete Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ## Project
 
@@ -47,7 +47,6 @@ File | Purpose
 ---|---
 `index.html` | Main page with html and semantic elements
 `global.css` | css for your page
-`thank-you.html` | Page your form will "submit" to
 
 ## Commit
 
@@ -66,7 +65,7 @@ To "push" to GitHub, either hit "Sync" after committing, or hit the recycle whee
 Come up with a concept and find assets:
 
 - Image(s)
-- Content (okay to be silly or flippant)
+- Content (okay to be silly)
 - Fonts
 - Sketch out general design
 - Decide on how (or whether) it will be responsive
@@ -114,9 +113,7 @@ Add a media query for switching to more complex layout for wide viewports (lapto
 
 ### Form
 
-Make sure to add the following attributes to your form and its controls:
-- Use `method="GET"` and `action="thank-you.html"` to direct to the thank you 
-page when the form is submitted
+- The form isn't going to do anything but reload the page initially - we'll add aditional functionality in later in the week. Be sure to include an input for the user email and a button. 
 - Make sure to add an id to your input, and add `for="email"` (or whatever your id is) _to the label_. This makes the label associated with the input
 
 ## Deploying
