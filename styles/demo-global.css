@@ -47,7 +47,7 @@ body {
     /* This is a "picture" of where each element should go */
     grid-template-areas:
       'header  image'
-      'lead image'
+      'lead    image'
       'signup  image';
     /* Default positioning: stretch horizontally, center vertically */
     justify-items: stretch;
